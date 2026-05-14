@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Packages & Pricing — Gorgeous Gourds | Hickory, NC</title>
+<meta name="description" content="Fall porch styling packages in Hickory, NC: Classic ($275), Royal Gourd ($525), Grand ($800), Signature ($1,350). Delivered, styled, and removed. Text a photo to book.">
+<link rel="canonical" href="https://ggpumpkins.com/packages/">
+<meta property="og:title" content="Packages & Pricing — Gorgeous Gourds">
+<meta property="og:description" content="Fall porch styling packages starting at $275. Delivered, styled, and removed. Book your spot before we fill up.">
+<meta property="og:url" content="https://ggpumpkins.com/packages/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ggpumpkins.com/images/inner-premium-hero.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/urgency.css">
+<style>
+  .addon-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:16px; margin-top:16px; }
+  .addon-card { background:white; border-radius:10px; padding:20px; text-align:center; box-shadow:var(--shadow); border-top:3px solid var(--sage); }
+  .addon-card h4 { color:var(--brown); font-size:1.05rem; }
+  .addon-card .price { font-size:1.5rem; color:var(--pumpkin); font-weight:bold; margin:6px 0; }
+  .note-box { background:#FAF5EE; border-left:4px solid var(--gold); padding:18px 22px; border-radius:0 8px 8px 0; margin:24px 0; }
+  .urgency-tag { display:inline-block; background:#7B2D00; color:#fff; padding:4px 12px; border-radius:20px; font-size:0.78rem; font-weight:600; margin-bottom:10px; letter-spacing:0.03em; }
+
+  /* Styled Porches Section */
+  .styled-porches { margin-top:48px; }
+  .styled-porches h2 { margin-bottom:8px; }
+  .porch-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:24px; margin-top:24px; }
+  .porch-card { background:white; border-radius:12px; overflow:hidden; box-shadow:var(--shadow); transition:transform 0.2s; cursor:pointer; }
+  .porch-card:hover { transform: translateY(-4px); box-shadow:0 12px 32px rgba(0,0,0,0.12); }
+  .porch-img { width:100%; height:240px; object-fit:cover; display:block; }
+  .porch-info { padding:20px; }
+  .porch-info h4 { color:var(--brown); margin-bottom:4px; font-size:1.15rem; }
+  .porch-info .package-tag { display:inline-block; background:#F8C48C; color:#5C3A21; font-size:0.78rem; padding:3px 10px; border-radius:999px; font-weight:600; margin-top:6px; }
+  .porch-info p { color:#666; font-size:0.95rem; margin-top:8px; }
+  .lightbox { display:none; position:fixed; inset:0; z-index:700; background:rgba(45,27,14,0.88); padding:24px; align-items:center; justify-content:center; }
+  .lightbox.active { display:flex; }
+  .lightbox img { max-width:min(1100px, 94vw); max-height:76vh; border-radius:10px; box-shadow:0 18px 60px rgba(0,0,0,0.35); }
+  .lightbox-caption { color:white; background:rgba(45,27,14,0.82); padding:14px 18px; border-radius:8px; max-width:min(760px, 94vw); margin:12px auto 0; }
+  .lightbox-close { position:fixed; top:18px; right:18px; width:42px; height:42px; border:1px solid rgba(255,255,255,0.3); border-radius:50%; background:rgba(255,255,255,0.12); color:white; font-size:1.5rem; cursor:pointer; }
+  .faq-embed { border-bottom: 1px solid #E8DDD0; padding: 18px 0; }
+  .faq-embed:first-of-type { border-top: 1px solid #E8DDD0; }
+  .faq-embed summary { font-weight: 600; color: var(--brown); cursor: pointer; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .faq-embed summary::-webkit-details-marker { display: none; }
+  .faq-embed summary::after { content: '+'; color: var(--pumpkin); font-size: 1.2rem; flex-shrink: 0; margin-left: 12px; }
+  .faq-embed[open] summary::after { content: '−'; }
+  .faq-embed p { margin-top: 12px; color: #555; line-height: 1.7; padding-bottom: 4px; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ggpumpkins.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Packages",
+          "item": "https://ggpumpkins.com/packages/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Fall porch styling packages",
+      "serviceType": "Pumpkin porch styling",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Gorgeous Gourds",
+        "url": "https://ggpumpkins.com/",
+        "telephone": "+1-704-666-0551"
+      },
+      "areaServed": [
+        "Hickory NC",
+        "Newton NC",
+        "Conover NC",
+        "Lincolnton NC",
+        "Denver NC",
+        "Sherrills Ford NC",
+        "Lake Norman NC",
+        "Huntersville NC",
+        "Cornelius NC"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Gorgeous Gourds package catalog",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Classic Porch",
+            "price": "275",
+            "priceCurrency": "USD",
+            "url": "https://ggpumpkins.com/packages/#classic-porch",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Classic Porch",
+              "description": "Small porch package with 8 to 12 pumpkins, layered styling, and delivery included."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Royal Gourd",
+            "price": "525",
+            "priceCurrency": "USD",
+            "url": "https://ggpumpkins.com/packages/#royal-gourd",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Royal Gourd",
+              "description": "Mid-size porch package with 15 to 20 pumpkins, rich layered styling, and delivery included."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Grand Gourd",
+            "price": "800",
+            "priceCurrency": "USD",
+            "url": "https://ggpumpkins.com/packages/#grand-gourd",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Grand Gourd",
+              "description": "Large porch package with 25 to 35 pumpkins, full design included, and delivery included."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Signature Porch",
+            "price": "1350",
+            "priceCurrency": "USD",
+            "url": "https://ggpumpkins.com/packages/#signature-porch",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Signature Porch",
+              "description": "Luxury statement porch package with 40 or more pumpkins, premium selection, and full design included."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- HONEST URGENCY BAR -->
+<div class="urgency-bar" id="urgencyBar">
+  <span>🍂 Booking closes October 10th. After that, you'll wait until next fall.</span>
+  <a class='urgency-bar-btn' href='/contact'>Join the Waitlist</a>
+</div>
+
+<nav>
+  <div class="container">
+    <a class='logo' href='/'>Gorgeous <span>Gourds</span></a>
+    <ul class="nav-links">
+      <li><a href='/'>Home</a></li>
+      <li><a class='active' href='/packages'>Packages</a></li>
+      <li><a href='/gallery'>Gallery</a></li>
+      <li><a href='/blog'>Blog</a></li>
+      <li><a href='/faq'>FAQ</a></li>
+      <li><a href='/contact'>Contact</a></li>
+    </ul>
+    <button class="mobile-menu" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero premium-hero" style="padding:64px 24px 48px">
+  <div class="badge">Fall 2026 — Reserve Early</div>
+  <h1>Packages & Pricing</h1>
+  <p class="tagline">Premium pumpkins, professionally styled. We deliver, arrange, and remove.</p>
+</header>
+
+<!-- PACKAGES DETAIL -->
+<section>
+  <div class="container">
+
+    <!-- Scarcity Header -->
+    <div class="scarcity-header">
+      <div class="scarcity-pulse"></div>
+      <div>
+        <h2>🍂 Limited Bookings Per Season</h2>
+        <p><strong>Booking closes October 10th.</strong> After that, you'll wait until next fall.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:40px">Choose Your Package</h2>
+    <p class="section-sub">All packages include delivery. Design included on Grand & Signature. Spots are limited — fall bookings fill weeks before October.</p>
+    
+    <div class="packages-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:24px">
+      
+      <div class="package-card" id="classic-porch">
+        <h3>Classic Porch</h3>
+        <div class="price">$275</div>
+        <div class="desc">Perfect for small porches, townhomes, and entryways</div>
+        <ul class="includes">
+          <li>8–12 pumpkins (mixed sizes)</li>
+          <li>Simple layered styling</li>
+          <li>Delivery included</li>
+          <li>Design setup <strong>+$75</strong></li>
+          <li>Removal <strong>+$100</strong></li>
+        </ul>
+      </div>
+      
+      <div class="package-card featured" id="royal-gourd">
+        <span class="urgency-tag">Most Popular</span>
+        <h3>Royal Gourd</h3>
+        <div class="price">$525</div>
+        <div class="desc">The sweet spot — full impact, beautifully balanced</div>
+        <ul class="includes">
+          <li>15–20 pumpkins (great variety)</li>
+          <li>Rich layered styling</li>
+          <li>Delivery included</li>
+          <li>Design setup <strong>+$75</strong></li>
+          <li>Removal <strong>+$100</strong></li>
+        </ul>
+      </div>
+
+      <div class="package-card" id="grand-gourd">
+        <h3>Grand Gourd</h3>
+        <div class="price">$800</div>
+        <div class="desc">Larger porches, premium presence, full design included</div>
+        <ul class="includes">
+          <li>25–35 pumpkins (excellent variety)</li>
+          <li>Full design included</li>
+          <li>Premium styling</li>
+          <li>Delivery included</li>
+          <li>Removal <strong>+$100</strong></li>
+        </ul>
+      </div>
+
+      <div class="package-card" id="signature-porch">
+        <h3>Signature Porch</h3>
+        <div class="price">$1,350</div>
+        <div class="desc">Statement homes, luxury display, unforgettable curb appeal</div>
+        <ul class="includes">
+          <li>40+ pumpkins (premium selection)</li>
+          <li>Specialty pumpkins included</li>
+          <li>Full design included</li>
+          <li>Delivery included</li>
+          <li>Removal <strong>+$100</strong></li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <div class="note-box" style="margin-top:28px">
+      <strong>Ivory Crown Upgrade:</strong> All-white pumpkin display — <strong>+20%</strong> on any package.<br>
+      Stunning on neutral porches and full-sun homes. Book early — white pumpkin supply is limited each season.
+    </div>
+
+    <div class="styled-porches">
+      <h2>Real Styled Porches</h2>
+      <p class="section-sub">See package examples inspired by Hickory and Conover neighborhood porches.</p>
+      
+      <div class="porch-grid">
+        <div class="porch-card" onclick="openLightbox(this)">
+          <img class="porch-img" src="/images/gallery/classic-porch-conover-colonial.webp" alt="Classic Porch fall pumpkin display on a Conover Colonial porch" loading="lazy">
+          <div class="porch-info">
+            <h4>Conover Colonial</h4>
+            <span class="package-tag">Classic Porch - $275</span>
+            <p>Elegant, balanced styling with white pumpkins, heirloom gourds, and small seasonal accents.</p>
+          </div>
+        </div>
+
+        <div class="porch-card" onclick="openLightbox(this)">
+          <img class="porch-img" src="/images/gallery/royal-gourd-hickory-colonial.webp" alt="Royal Gourd premium pumpkin display on brick Hickory porch steps" loading="lazy">
+          <div class="porch-info">
+            <h4>Hickory Brick Steps</h4>
+            <span class="package-tag">Royal Gourd — $525</span>
+            <p>Rich layered styling with premium heirloom color, full porch impact, and a clear walkway.</p>
+          </div>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:20px;color:#555">Want to see more? <a href="/gallery" style="color:var(--pumpkin);font-weight:600">See real styled porches in our gallery</a>.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ADD-ONS -->
+<section id="add-ons" style="background:white">
+  <div class="container">
+    <h2>Add-Ons & Options</h2>
+    <p class="section-sub">Customize your display</p>
+    <div class="addon-grid">
+      <div class="addon-card">
+        <h4>Design Setup</h4>
+        <div class="price">$75</div>
+        <p style="font-size:0.85rem;color:#666">Professional arrangement. Included free on Grand & Signature packages.</p>
+      </div>
+      <div class="addon-card">
+        <h4>Removal</h4>
+        <div class="price">$100</div>
+        <p style="font-size:0.85rem;color:#666">Post-Thanksgiving pickup. Pumpkins donated to local farms.</p>
+      </div>
+      <div class="addon-card">
+        <h4>Ivory Crown</h4>
+        <div class="price">+20%</div>
+        <p style="font-size:0.85rem;color:#666">All-white pumpkins. Applied to any base package price.</p>
+      </div>
+      <div class="addon-card">
+        <h4>Hay Bales</h4>
+        <div class="price">$25</div>
+        <p style="font-size:0.85rem;color:#666">Classic fall hay bales to anchor your display. Perfect for layering with pumpkins.</p>
+      </div>
+      <div class="addon-card">
+        <h4>Corn Stalks</h4>
+        <div class="price">Ask</div>
+        <p style="font-size:0.85rem;color:#666">Tall dried corn stalks for a dramatic, farmhouse-style fall entrance.</p>
+      </div>
+      <div class="addon-card">
+        <h4>Mums</h4>
+        <div class="price">Ask</div>
+        <p style="font-size:0.85rem;color:#666">Seasonal chrysanthemums in rich fall colors — the perfect porch companion.</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:20px;color:#8B7355;font-style:italic">Pricing on hay bales, corn stalks, and mums quoted based on quantity — text us for a bundle quote.</p>
+  </div>
+</section>
+
+<!-- FAQ PREVIEW -->
+<section>
+  <div class="container" style="max-width:720px">
+    <h2>Common Questions About Packages</h2>
+    <p class="section-sub">Quick answers before you commit</p>
+    <details class="faq-embed">
+      <summary>Can I customize my package?</summary>
+      <p>Absolutely. All packages can be upgraded with the <strong>Ivory Crown</strong> (all-white pumpkins, +20%). You can also add design setup on Classic and Royal, and removal service on any package. Want something completely custom? Text us.</p>
+    </details>
+    <details class="faq-embed">
+      <summary>Do I need to be home for installation?</summary>
+      <p><strong>Nope.</strong> We work on your front porch while you're out. Just make sure we have access to the porch area. We'll send you a photo of the finished display once we're done.</p>
+    </details>
+    <details class="faq-embed">
+      <summary>What if a pumpkin goes bad early?</summary>
+      <p>We'll replace any pumpkin that goes bad within the first <strong>14 days</strong> of install, no charge. Just send us a photo.</p>
+    </details>
+    <details class="faq-embed">
+      <summary>What's the $100 deposit for?</summary>
+      <p>The $100 deposit <strong>reserves your spot</strong> on our calendar and is applied toward your total balance. Remaining balance is due at installation. Deposits are refundable if you cancel 14+ days before your scheduled install.</p>
+    </details>
+    <p style="text-align:center;margin-top:24px"><a href="/faq" style="color:var(--pumpkin);font-weight:600">See all 10 frequently asked questions →</a></p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="countdown-box">
+      <p class="countdown-label">Booking Opens In</p>
+      <div class="countdown" id="countdown">
+        <div><span id="cd-days">--</span><small>days</small></div>
+        <div><span id="cd-hours">--</span><small>hrs</small></div>
+        <div><span id="cd-mins">--</span><small>mins</small></div>
+        <div><span id="cd-secs">--</span><small>secs</small></div>
+      </div>
+    </div>
+    <h2>Ready to Book?</h2>
+    <p><strong>Booking closes October 10th.</strong> After that, you'll wait until next fall.</p>
+    <a class='btn btn-white' href='/contact'>Reserve Your Spot — $100 Deposit</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href='/'>Home</a></li>
+      <li><a href='/packages'>Packages</a></li>
+      <li><a href='/gallery'>Gallery</a></li>
+      <li><a href='/faq'>FAQ</a></li>
+      <li><a href='/contact'>Contact</a></li>
+    </ul>
+    <p><strong>Gorgeous Gourds</strong> — Luxury Fall Porch Styling</p>
+    <p>Hickory, NC • <a href="mailto:704porchpumpkins@gmail.com">704porchpumpkins@gmail.com</a> • (704) 666-0551</p>
+    <p style="margin-top:8px;font-size:0.8rem">© 2026 Gorgeous Gourds. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/urgency.js"></script>
+<script src="/nav.js"></script>
+
+<!-- Lightbox Script -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="event.stopImmediatePropagation(); closeLightbox();">×</button>
+  <img id="lightboxImg" src="" alt="">
+  <div id="lightboxCaption" class="lightbox-caption"></div>
+</div>
+
+<script>
+function openLightbox(card) {
+  const img = card.querySelector('img');
+  const imgSrc = img ? img.src : '';
+  const imgAlt = img ? img.alt : '';
+  
+  const info = card.querySelector('.porch-info');
+  const captionHTML = info ? info.innerHTML : (imgAlt || '');
+  
+  document.getElementById('lightboxImg').src = imgSrc;
+  document.getElementById('lightboxImg').alt = imgAlt;
+  document.getElementById('lightboxImg').style.display = imgSrc ? '' : 'none';
+  
+  document.getElementById('lightboxCaption').innerHTML = captionHTML;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { 
+  if (e.key === 'Escape') closeLightbox(); 
+});
+</script>
+
+</body>
+</html>
