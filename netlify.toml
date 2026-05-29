@@ -1,3 +1,7 @@
+# Auto-deploy note: this repo is PRIVATE on a Netlify plan that only builds commits
+# authored by a VERIFIED team member. Commits must be authored by raoulduke0138@gmail.com
+# (set via `git config user.email`) or the build is blocked: 'Unrecognized Git contributor'.
+
 [build]
   publish = "."
 
