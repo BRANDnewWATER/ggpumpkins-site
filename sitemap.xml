@@ -56,4 +56,28 @@
     <loc>https://ggpumpkins.com/lake-norman-nc/</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ggpumpkins.com/conover-nc/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ggpumpkins.com/lincolnton-nc/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ggpumpkins.com/denver-nc/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ggpumpkins.com/sherrills-ford-nc/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ggpumpkins.com/huntersville-nc/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ggpumpkins.com/cornelius-nc/</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
